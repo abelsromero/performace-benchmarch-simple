@@ -1,0 +1,8 @@
+.vscode
+.idea
+#Gradle: Java, cpp
+.gradle
+/build
+#Rust
+**/target
+**/*.rs.bk

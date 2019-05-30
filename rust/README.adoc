@@ -1,0 +1,11 @@
+= Rust test
+
+This is a standard https://doc.rust-lang.org/cargo/[cargo] project.
+
+== Building
+
+ $ cargo clean && cargo build --release
+
+== Running
+
+ $ ./target/release/numbers-runner

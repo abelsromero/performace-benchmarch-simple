@@ -1,0 +1,22 @@
+= Java performance test
+
+== Running the app
+
+
+=== JVM compilation
+
+. Generate Jar with task `shadowJar`
+
+. Run
+
+ $ java -jar ./build/libs/number-runner-all.jar
+
+=== GraalVM native compilation
+
+. Install GraalVM: on Unix system you can use SDK
+
+ $ sdk i 19.0.0-grl
+
+. (Only when using GraalVM v19 or higher) Install Graal `native-image` plugin
+
+ $ gu install native-image

@@ -1,0 +1,25 @@
+= Go
+
+== Preparing Go environment
+
+. Install Go, in Arch based distros just run
+ 
+ $ pacman -S go dep
+
+. Setup `GOPATH` environment variable (https://golang.github.io/dep/docs/new-project.html[see]).
+Place the shell at `go/src` path and run
+
+ $ export GOPATH="$HOME/go:$(dirname $(pwd))"
+
+INFO: `echo $GOPATH/` should end in `go` directory.
+
+== Building
+
+Place at the directory `go/src/go-numbers-runner`.
+Run `go build`
+
+== Running
+
+`go-numbers-runner` binary will be created at the source of `go-numbers-runner` directory.
+
+NOTE: Use `go clean` to delete the binary in a safe way.

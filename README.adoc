@@ -1,0 +1,9 @@
+= Bencharking memory of simple procesess in different languages
+
+
+== Notes
+
+Things to keep in mind
+
+* Java native image leakage seen with v15 seems to be related to println usage.
+Try output with logger.
