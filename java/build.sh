@@ -22,7 +22,7 @@ cd build/libs
 native-image \
 -cp numbers-runner-all.jar \
 -H:+ReportUnsupportedElementsAtRuntime \
--H:Name=number-runner \
+-H:Name=numbers-runner \
 org.abelsromero.benchmark.App
 
 # cp $JAVA_HOME/jre/lib/amd64/libsunec.so .

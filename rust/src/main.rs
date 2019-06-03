@@ -11,13 +11,18 @@ fn main() {
         println!("{}", it);
     }
     // consumes 05MB RAM, but is not very fast
+    let max_value = 1_000_000;
     let mut value: u32 = 1;
-    while value < 1_000_000 {
+    while value < max_value {
         println!("{}", value);
         value += 1;
         if value == std::u32::MAX {
             value = 0;
         }
+
+        // if value == max_value {
+        //     value = 0;
+        // }
     }
     println!(
         "Time: {} sec",

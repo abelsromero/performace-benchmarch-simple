@@ -20,3 +20,10 @@
 . (Only when using GraalVM v19 or higher) Install Graal `native-image` plugin
 
  $ gu install native-image
+
+
+ [IMPORTANT]
+ ====
+ When running the native image, set a memory limit with `-Xmx` (e.g. -Xmx1M).
+ Otherwise the process will grow to 256MB and then continue.
+ ====

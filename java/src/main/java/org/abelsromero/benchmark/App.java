@@ -13,8 +13,8 @@ public class App {
 //        while (true) {
         int i;
         for (i = 0; i < 1_000_000; i++) {
+            System.out.println(i);
             if (i % 10000 == 0) {
-
                 col++;
                 if (col == 10) {
                     System.out.println(i);
